@@ -21,7 +21,7 @@ const PokemonDetailsPage = () => {
   const dispatch = useDispatch();
 
   if (!router.isReady || isLoading) {
-    return <Spinner animation="border" role="status">
+    return <Spinner style={{display:'flex',justifyContent:'center'}} animation="border" role="status">
       <span className="visually-hidden">Loading...</span>
     </Spinner>;
   }

@@ -19,13 +19,6 @@ const PokemonList: React.FC = () => {
   const { data, error, isLoading } = useGetPokemonListQuery(page);
   const dispatch = useDispatch();
 
-  const handlePreviousPage = () => {
-    setPage((prev) => prev - 1);
-  };
-
-  const handleNextPage = () => {
-    setPage((prev) => prev + 1);
-  };
 
   if (isLoading) return <img src={pokemonGif}  alt='myPokemon' />;
 
